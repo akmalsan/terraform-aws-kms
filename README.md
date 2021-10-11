@@ -1,6 +1,6 @@
 # terraform-aws-kms
 
-[![Terraform Version](https://img.shields.io/badge/Terraform%20Version->=0.13.0,<0.13.7-blue.svg)](https://releases.hashicorp.com/terraform/)
+[![Terraform Version](https://img.shields.io/badge/Terraform%20Version->=0.13.0,<=0.13.7-blue.svg)](https://releases.hashicorp.com/terraform/)
 [![Release](https://img.shields.io/github/release/traveloka/terraform-aws-kms.svg)](https://github.com/traveloka/terraform-aws-kms/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/traveloka/terraform-aws-kms.svg)](https://github.com/traveloka/terraform-aws-kms/commits/master)
 [![Issues](https://img.shields.io/github/issues/traveloka/terraform-aws-kms.svg)](https://github.com/traveloka/terraform-aws-kms/issues)
@@ -8,26 +8,37 @@
 [![License](https://img.shields.io/github/license/traveloka/terraform-aws-kms.svg)](https://github.com/traveloka/terraform-aws-kms/blob/master/LICENSE)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
 
-## Table of Content
-
-
 ## Description
 
 Terraform module which creates a KMS Customer Master Key (CMK) and its alias.
 
+## Table of Content
+
+* [terraform-aws-kms](#terraform-aws-kms)
+   * [Description](#description)
+   * [Table of Content](#table-of-content)
+   * [Prerequisites](#prerequisites)
+   * [Dependencies](#dependencies)
+   * [Usage](#usage)
+   * [Terraform Version](#terraform-version)
+   * [Requirements](#requirements)
+   * [Providers](#providers)
+   * [Modules](#modules)
+   * [Resources](#resources)
+   * [Inputs](#inputs)
+   * [Outputs](#outputs)
+   * [Contributing](#contributing)
+   * [License](#license)
 
 ## Prerequisites
 
-
+This module doesn't have any existing resource requirements
 
 ## Dependencies
 
 This Terraform module have no dependencies to another modules
 
-
-## Getting Started
-
-### Usage
+## Usage
 ```hcl
 module "cmk_key" {
   source  = "github.com/traveloka/terraform-aws-kms-cmk?ref=v0.1.0"
@@ -40,12 +51,16 @@ module "cmk_key" {
 }
 ```
 
+## Terraform Version
+
+The latest stable version of Terraform which this module tested working is Terraform `0.13.7` on 2021/10/07
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
 
 ## Providers
 
